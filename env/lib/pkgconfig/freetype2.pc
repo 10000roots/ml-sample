@@ -1,0 +1,14 @@
+prefix=/Users/mlee/development/sample_project/env
+exec_prefix=/Users/mlee/development/sample_project/env
+libdir=/Users/mlee/development/sample_project/env/lib
+includedir=/Users/mlee/development/sample_project/env/include
+
+Name: FreeType 2
+URL: https://freetype.org
+Description: A free, high-quality, and portable font engine.
+Version: 23.4.17
+Requires:
+Requires.private: 
+Libs: -L${libdir} -lfreetype
+Libs.private: -lz -L/Users/mlee/development/sample_project/env/lib -lpng16 -lz
+Cflags: -I${includedir}/freetype2
